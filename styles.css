@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3{
+    font-family: "Noto Sans", sans-serif;;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+    margin: auto 10px;
+}
+
+.contact-header{
+    display: flex;
+    margin-right: 16px;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-icon img {
+    width: 30px;
+    height: auto;
+}
+
+.services img{
+    width: 400px;
+    border-radius: 50px;
+}
+
+.contact-button, .cta-button, .footer-contact-button {
+    background-color: #2b2b2b;
+    color: #17A0AB;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-button:hover, .cta-button:hover, .footer-contact-button:hover {
+    opacity: 0.9;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 70vh;
+    margin: auto;
+}
+
+.intro h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 30px;
+    color: #17A0AB;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px;
+    align-items: center;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.service h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+.specialists {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.specialists-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px auto;
+    align-items: center;
+}
+
+.specialists-content img{
+    width: 400px;
+    border-radius: 50px;
+}
+
+.specialist-services {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: left;
+}
+
+.specialist-services .service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.specialist-services img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.quote {
+    background-color: #000;
+    color: #fff;
+    font-style: italic;
+    padding: 6px 0px;
+}
+
+.phrase{
+    font-size: 24px;
+}
+
+.name{
+    font-size: 16px;
+}
+
+.cargo{
+    font-size: 12px;
+}
+
+.loleny-contact-button{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact-button {
+    /* background-color: #000000; */
+    background-color: #2b2b2b;
+    color: #17A0AB;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+}
+
+.service-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-list li::before {
+    content: "✔";
+    color: #17A0AB;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 20px;
+    background-color: #fff;
+    margin: auto;
+}
+  
+img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.info-footer {
+    width: 70vh;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact,
+.regions {
+    margin-top: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+.contact a i {
+    margin-right: 5px;
+}
